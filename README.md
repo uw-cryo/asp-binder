@@ -2,8 +2,8 @@
 
 This repository builds a [JupyterHub](https://jupyter.org/hub) environment with [Repo2Docker](https://repo2docker.readthedocs.io/en/latest/) and [GitHub Actions CI](https://help.github.com/en/actions/automating-your-workflow-with-github-actions) 
 
-![Action Status](https://github.com/uw-cryo/asp-binder/workflows/Repo2Docker/badge.svg)
-![Docker Pulls](https://img.shields.io/docker/pulls/uwcryo/asp-binder)
+[![Action Status](https://github.com/uw-cryo/asp-binder/workflows/Repo2Docker/badge.svg)](https://github.com/uw-cryo/asp-binder/actions)
+[![Docker Pulls](https://img.shields.io/docker/pulls/uwcryo/asp-binder)](https://hub.docker.com/r/uwcryo/asp-binder/tags)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/uw-cryo/asp-binder/master?urlpath=lab)
 
 https://hub.docker.com/r/uwcryo/asp-binder/tags
