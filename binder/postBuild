@@ -1,0 +1,21 @@
+#!/bin/bash
+set -euo pipefail
+
+jupyter labextension install @jupyter-widgets/jupyterlab-manager \
+                             @pyviz/jupyterlab_pyviz \
+                             jupyter-matplotlib \
+                             jupyter-leaflet \
+                             dask-labextension
+
+# Install Ames stereo pipeline binary (~200Mb)
+#e.g. https://byss.arc.nasa.gov/stereopipeline/daily_build/StereoPipeline-2.6.2_post-2019-11-20-x86_64-Linux.tar.bz2
+DATE='2019-11-20'
+VERSION="2.6.2_post"
+NAME=StereoPipeline-$VERSION-$DATE-x86_64-Linux
+wget -q https://byss.arc.nasa.gov/stereopipeline/daily_build/$NAME.tar.bz2
+tar -xjf $NAME.tar.bz2
+mv $NAME ${KERNEL_PYTHON_PREFIX}/StereoPipeline
+rm $NAME.tar.bz2
+
+# EOF
+

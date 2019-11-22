@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export PATH=$PATH:${KERNEL_PYTHON_PREFIX}/StereoPipeline/bin
+
+exec "$@"
