@@ -19,7 +19,7 @@ on:
 
 
 env:
-  CONTAINER_NAME: uw-cryo/asp-binder
+  CONTAINER_NAME: uwcryo/asp-binder
   GITHUB_SHA: ${{ github.sha }}
   GITHUB_REF: ${{ github.ref }}
 
