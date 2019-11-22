@@ -1,16 +1,40 @@
-# packages in addition to repo2docker/buildpacks/conda/environment.yml
-name: isce2
+name: asp
 channels:
   - conda-forge
 dependencies:
-  - jupyterlab=1.2
-  - jupyterhub=1.0
-  - jupyter-server-proxy=1.1
-  - nbgitpuller=0.7
-  - dask=2.8
-  - distributed=2.8
-  - dask-labextension=1.0
-  - tornado=6.0
-  - bokeh=1.4
-  - python-graphviz=0.13
-  - pip=19.3
+  - python=3.7
+  - pip
+  - nomkl
+  - conda
+  - ipykernel
+  - nb_conda_kernels
+  - s3fs
+  - gcsfs
+  - intake
+  - intake-xarray
+  - xarray
+  - zarr
+  - h5py
+  - h5netcdf
+  - matplotlib
+  - libgdal
+  - boto3
+  - awscli
+  - hvplot
+  - geoviews-core
+  - ipyleaflet
+  - datashader
+  - requests
+  - pandas
+  - geopandas
+  - rasterio
+  - rio-cogeo
+  - sat-search
+  - mercantile
+  - contextily
+  - planet
+  - pip:
+    - porder
+    - pygeotools
+    - git+https://github.com/dshean/imview.git
+    - git+https://github.com/dshean/demcoreg.git

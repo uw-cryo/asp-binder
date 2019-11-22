@@ -1,1 +1,20 @@
+graphviz
 vim
+parallel
+jq
+# libraries required for asp binary
+libx11-6
+libxfixes3
+libxinerama1
+libpixman-1-0
+libxrender1
+libxi6
+libxrandr2
+libxcursor1
+libxcomposite1
+libxdamage1
+libglapi-mesa
+libxcb-glx0
+libxcb-dri2-0
+libxxf86vm1
+libdrm2
