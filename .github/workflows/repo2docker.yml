@@ -55,9 +55,9 @@ jobs:
       # Add folder of artifacts related to build that anyone can download
       run: |
         if docker pull $CONTAINER_NAME:latest; then
-          jupyter-repo2docker --cache-from $CONTAINER_NAME:latest --debug --user-name jovyan --user-id 1000 --no-run --image-name $CONTAINER_NAME:latest $PWD
+          jupyter-repo2docker --cache-from $CONTAINER_NAME:latest --target-repo-dir /srv/repo2docker --debug --user-name jovyan --user-id 1000 --no-run --image-name $CONTAINER_NAME:latest $PWD
         else
-          jupyter-repo2docker --debug --user-name jovyan --user-id 1000 --no-run --image-name $CONTAINER_NAME:latest $PWD
+          jupyter-repo2docker --target-repo-dir /srv/repo2docker --debug --user-name jovyan --user-id 1000 --no-run --image-name $CONTAINER_NAME:latest $PWD
         fi
         mkdir conda-packages
         docker run $CONTAINER_NAME:latest conda list > conda-packages/packages.txt
