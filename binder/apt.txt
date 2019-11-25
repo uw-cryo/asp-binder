@@ -1,4 +1,4 @@
-graphviz
+# general linux 
 vim
 parallel
 jq
