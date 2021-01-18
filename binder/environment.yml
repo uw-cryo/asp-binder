@@ -2,53 +2,49 @@ name: asp
 channels:
   - conda-forge
 dependencies:
-# Jupyter and Dask
-  - jupyterlab=2
-  - jupyter-server-proxy
-  - nbgitpuller
-  - dask
-  - distributed
-  - dask-labextension
   - bokeh
-  - nodejs
-  - python-graphviz
-  - pip
-# Raster
-  - xarray
-  - h5py
-  - h5netcdf
-  - rasterio
-  - rio-cogeo
-  - mercantile
-  - rioxarray
-# Vector
-  - pandas
-  - geopandas
-  - fiona
-  - shapely
-# Viz
-  - holoviews
-  - geoviews
-  - hvplot
-  - datashader
-  - matplotlib
   - contextily
-  - ipyleaflet
-# IO
-  - s3fs
+  - dask
+  - dask-labextension
+  - datashader
+  - distributed
+  - fiona
   - gcsfs
+  - geopandas
+  - geoviews
+  - h5netcdf
+  - h5py
+  - holoviews
+  - hvplot
   - intake
   - intake-xarray
-  - zarr
-  - sat-search
-# Misc
-  - nomkl
   - ipykernel
+  - ipyleaflet
+  - ipywidgets
+#  - ipympl
+  - jupyterhub-singleuser
+  - jupyter-server-proxy
+  - jupyterlab=2
+  - matplotlib
+  - mercantile
   - nb_conda_kernels
-  - boto3
-  - awscli
-  - requests
+  - nbgitpuller
+  - nodejs
+  - nomkl
+  - pandas
+  - pip
   - planet
+  - python=3.8
+  - python-graphviz
+  - rasterio
+  - requests
+  - rio-cogeo
+  - rioxarray
+  - s3fs
+  - sat-search
+  - shapely
+  - xarray
+  - zarr
   - pip:
     - porder
     - pygeotools

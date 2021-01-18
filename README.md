@@ -33,3 +33,11 @@ docker rm ASP
 (image: uwcryo/asp-binder:0.1)
 https://zero-to-jupyterhub.readthedocs.io/en/latest/reference/reference.html?highlight=profile_list#singleuser-profilelist
 
+
+### Build locally
+```
+git clone https://github.com/uw-cryo/asp-binder.git 
+cd asp-binder/binder
+docker build -t uwcryo/asp-binder:test .
+```
+
