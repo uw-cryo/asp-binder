@@ -15,7 +15,7 @@ VERSION="2.6.2_post"
 NAME=StereoPipeline-$VERSION-$DATE-x86_64-Linux
 wget -q https://byss.arc.nasa.gov/stereopipeline/daily_build/$NAME.tar.bz2
 tar -xjf $NAME.tar.bz2
-mv $NAME ${KERNEL_PYTHON_PREFIX}/StereoPipeline
+mv $NAME /srv/StereoPipeline
 rm $NAME.tar.bz2
 
 # EOF

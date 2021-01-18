@@ -1,6 +1,6 @@
 #!/bin/bash
 
 export IMAGECONFIG='https://github.com/uw-cryo/asp-binder'
-export PATH=$PATH:${KERNEL_PYTHON_PREFIX}/StereoPipeline/bin
+export PATH=$PATH:/srv/StereoPipeline/bin
 
 exec "$@"
