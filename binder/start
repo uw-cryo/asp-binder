@@ -2,7 +2,4 @@
 
 export PATH=$PATH:${KERNEL_PYTHON_PREFIX}/StereoPipeline/bin
 
-# Otherwise we end up in REPO_DIR=/srv/repo2docker since we're building with --target-repo-dir
-cd $HOME
-
 exec "$@"

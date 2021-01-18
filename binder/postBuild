@@ -1,18 +1,12 @@
 #!/bin/bash
 set -euo pipefail
 
+# can remove these after bumping to jlab>=3
 jupyter labextension install @jupyter-widgets/jupyterlab-manager \
                              @pyviz/jupyterlab_pyviz \
                              jupyter-matplotlib \
                              jupyter-leaflet \
                              dask-labextension
-
-
-# dask config for pangeo jupyterhubs and binders
-# ${KERNEL_PYTHON_PREFIX} is set by repo2docker to sys.prefix
-# of the python that the kernel is run in.
-mkdir -p ${KERNEL_PYTHON_PREFIX}/etc/dask
-cp binder/dask_config.yaml ${KERNEL_PYTHON_PREFIX}/etc/dask/dask.yaml
 
 # Install Ames stereo pipeline binary (~200Mb)
 #e.g. https://byss.arc.nasa.gov/stereopipeline/daily_build/StereoPipeline-2.6.2_post-2019-11-20-x86_64-Linux.tar.bz2

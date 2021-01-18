@@ -2,14 +2,13 @@ name: asp
 channels:
   - conda-forge
 dependencies:
-# from pangeo-stacks base-image
-  - jupyterlab=2.0
+# Jupyter and Dask
+  - jupyterlab=2
   - jupyter-server-proxy
   - nbgitpuller
   - dask
   - distributed
   - dask-labextension
-  - dask-gateway
   - tornado
   - bokeh
   - python-graphviz

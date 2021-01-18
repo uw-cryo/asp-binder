@@ -1,0 +1,20 @@
+name: BuildAndTest
+on: [pull_request]
+jobs:
+  build-image-without-pushing:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout PR
+      uses: actions/checkout@v2
+
+    - name: Build Only
+      uses: jupyterhub/repo2docker-action@master
+      with:
+        NO_PUSH: 'true'
+        IMAGE_NAME: "uwcryo/asp-binder"
+        #MYBINDERORG_TAG: ${{ github.event.pull_request.head.ref }} #clutters output log
+
+    - name: Report Image Size and Conda Packages
+      run: |
+        docker images
+        docker run uwcryo/asp-binder:latest conda list --export

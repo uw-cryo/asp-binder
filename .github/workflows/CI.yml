@@ -1,0 +1,29 @@
+name: CI
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'LICENSE'
+      - 'README.md'
+      - '.gitignore'
+
+jobs:
+  build-image-and-push:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repo
+      uses: actions/checkout@v2
+
+    - name: Build and Push
+      uses: jupyterhub/repo2docker-action@master
+      with:
+        DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+        IMAGE_NAME: "uwcryo/asp-binder"
+        #MYBINDERORG_TAG: ${{ github.event.ref }} #clutters output log
+
+    - name: Report Image Size and Conda Packages
+      run: |
+        docker images
+        docker run uwcryo/asp-binder:latest conda list --export
