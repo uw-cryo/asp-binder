@@ -9,8 +9,8 @@ dependencies:
   - dask
   - distributed
   - dask-labextension
-  - tornado
   - bokeh
+  - nodejs
   - python-graphviz
   - pip
 # Raster
