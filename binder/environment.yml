@@ -1,4 +1,4 @@
-name: asp
+name: notebook
 channels:
   - conda-forge
 dependencies:
