@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Install Ames stereo pipeline binary (~200Mb)
-#e.g. https://byss.arc.nasa.gov/stereopipeline/daily_build/StereoPipeline-2.6.2_post-2019-11-20-x86_64-Linux.tar.bz2
-DATE='2021-01-18'
-VERSION="2.7.0"
+#e.g. https://github.com/NeoGeographyToolkit/StereoPipeline/releases/download/3.0.0/StereoPipeline-3.0.0-2021-07-27-x86_64-Linux.tar.bz2
+DATE='2021-07-27'
+VERSION="3.0.0"
 NAME=StereoPipeline-$VERSION-$DATE-x86_64-Linux
-wget -q https://byss.arc.nasa.gov/stereopipeline/daily_build/$NAME.tar.bz2
+wget -q https://github.com/NeoGeographyToolkit/StereoPipeline/releases/download/3.0.0/$NAME.tar.bz2
 tar -xjf $NAME.tar.bz2
 mv $NAME /srv/StereoPipeline
 rm $NAME.tar.bz2
