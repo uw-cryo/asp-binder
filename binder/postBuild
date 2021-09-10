@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# can remove these after bumping to jlab>=3
-jupyter labextension install --clean @jupyter-widgets/jupyterlab-manager \
-                             @pyviz/jupyterlab_pyviz \
-                             jupyter-leaflet \
-                             dask-labextension
-
 # Install Ames stereo pipeline binary (~200Mb)
 #e.g. https://byss.arc.nasa.gov/stereopipeline/daily_build/StereoPipeline-2.6.2_post-2019-11-20-x86_64-Linux.tar.bz2
 DATE='2021-01-18'
