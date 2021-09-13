@@ -4,7 +4,14 @@
 ![DockerHub Version](https://img.shields.io/docker/v/uwcryo/asp-binder?sort=date)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/uw-cryo/asp-binder/master?urlpath=lab)
 
-### How to use
+This repository has the configuration for a Jupyter-ready docker image with ASP pre-installed. It is intended to create a standard environment for users to easily experiment with ASP code. Analysis examples live in separate repostories:
+
+| Topic | Binder Link | Repository | 
+| - | - | - | 
+| ASTER DEM | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/uw-cryo/asp-binder-demo/binder?urlpath=git-pull?repo=https://github.com/uw-cryo/asp-binder-demo%26amp%3Bbranch=master%26amp%3Burlpath=lab/tree/asp-binder-demo/example.ipynb/%3Fautodecode) | [Link](https://github.com/uw-cryo/asp-binder-demo/blob/master/example-aster_on_pangeo_binder_draft.ipynb) | 
+
+
+### How to update the image
 
 build with GitHub Actions simply by pushing to GitHub
 
