@@ -3,8 +3,8 @@
 # Install Ames stereo pipeline binary (~200Mb)
 #e.g. https://github.com/NeoGeographyToolkit/StereoPipeline/releases/download/2.7.0/StereoPipeline-2.7.0-2020-07-29-x86_64-Linux.tar.bz2
 # https://github.com/NeoGeographyToolkit/StereoPipeline/releases/download/3.0.0/StereoPipeline-3.0.0-2021-07-27-x86_64-Linux.tar.bz2
-DATE='2020-07-29'
-VERSION="2.7.0"
+DATE='2023-09-24'
+VERSION="3.4.0-alpha"
 NAME=StereoPipeline-$VERSION-$DATE-x86_64-Linux
 wget -q https://github.com/NeoGeographyToolkit/StereoPipeline/releases/download/$VERSION/$NAME.tar.bz2
 tar -xjf $NAME.tar.bz2
