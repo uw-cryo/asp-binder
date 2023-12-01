@@ -39,9 +39,9 @@ dependencies:
   - shapely
   - xarray
   - zarr
-  - pip:
-    - porder
-    - pygeotools
-    - git+https://github.com/dshean/imview.git
-    - git+https://github.com/dshean/demcoreg.git
-    - git+https://github.com/friedrichknuth/driveanon.git
+  - sliderule
+  #- pip:
+   # - porder
+   # - pygeotools
+   # - git+https://github.com/dshean/imview.git
+   # - git+https://github.com/dshean/demcoreg.git
