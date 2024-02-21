@@ -3,7 +3,6 @@
 
 export IMAGECONFIG='https://github.com/uw-cryo/asp-binder'
 export PATH=${PATH}:/srv/StereoPipeline/bin
-conda activate notebook
 
 # ==== ONLY EDIT WITHIN THIS BLOCK =====
 exec "$@"
