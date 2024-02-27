@@ -13,6 +13,8 @@ libxcursor1
 libxcomposite1
 libxdamage1
 libglapi-mesa
+libgl1-mesa-dev
+libglib2.0-0
 libxcb-glx0
 libxcb-dri2-0
 libxxf86vm1
