@@ -8,10 +8,10 @@
 DATE='2024-02-26'
 VERSION="3.4.0-alpha"
 NAME=StereoPipeline-$VERSION-$DATE-x86_64-Linux
-wget -q https://github.com/NeoGeographyToolkit/StereoPipeline/releases/download/$DATE-daily-build/$NAME.tar.bz2
-tar -xjf $NAME.tar.bz2
-mv $NAME /srv/StereoPipeline
-rm $NAME.tar.bz2
+#wget -q https://github.com/NeoGeographyToolkit/StereoPipeline/releases/download/$DATE-daily-build/$NAME.tar.bz2
+#tar -xjf $NAME.tar.bz2
+#mv $NAME /srv/StereoPipeline
+#rm $NAME.tar.bz2
 
 # EOF
 
