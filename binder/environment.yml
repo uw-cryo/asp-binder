@@ -1,5 +1,7 @@
 name: notebook
 channels:
+  - nasa-ames-stereo-pipeline
+  - usgs-astrogeology 
   - conda-forge
 dependencies:
   - bokeh
@@ -30,7 +32,7 @@ dependencies:
   - pandas
   - pip
   - planet
-  - python=3.12
+  - python=3.9
   - python-graphviz
   - rasterio
   - requests
@@ -40,6 +42,7 @@ dependencies:
   - xarray
   - zarr
   - sliderule
+  - stereo-pipeline==3.3.0
   - pip:
     - git+https://github.com/uw-cryo/fetch_dem.git
    # - porder
