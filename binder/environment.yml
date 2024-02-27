@@ -40,7 +40,8 @@ dependencies:
   - xarray
   - zarr
   - sliderule
-  #- pip:
+  - pip:
+    - git+https://github.com/uw-cryo/fetch_dem.git
    # - porder
    # - pygeotools
    # - git+https://github.com/dshean/imview.git
