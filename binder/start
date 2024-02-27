@@ -2,7 +2,7 @@
 # ==== ONLY EDIT WITHIN THIS BLOCK =====
 
 export IMAGECONFIG='https://github.com/uw-cryo/asp-binder'
-#export PATH=${PATH}:/srv/StereoPipeline/bin
+export PATH=${PATH}:/srv/StereoPipeline/bin
 
 # ==== ONLY EDIT WITHIN THIS BLOCK =====
 exec "$@"
