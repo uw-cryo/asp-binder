@@ -5,13 +5,14 @@
 # https://github.com/NeoGeographyToolkit/StereoPipeline/releases/download/3.0.0/StereoPipeline-3.0.0-2021-07-27-x86_64-Linux.tar.bz2
 # https://github.com/NeoGeographyToolkit/StereoPipeline/releases/download/2023-09-24-daily-build/StereoPipeline-3.4.0-alpha-2023-09-24-x86_64-Linux.tar.bz2
 # https://github.com/NeoGeographyToolkit/StereoPipeline/releases/download/3.3.0/StereoPipeline-3.3.0-Linux.tar.bz2
-DATE='2024-02-23'
-VERSION="3.3.0"
-#VERSION="3.4.0-alpha"
-#NAME=StereoPipeline-$VERSION-$DATE-x86_64-Linux
-NAME=StereoPipeline-$VERSION-Linux
-#wget -q https://github.com/NeoGeographyToolkit/StereoPipeline/releases/download/$DATE-daily-build/$NAME.tar.bz2
-wget -q https://github.com/NeoGeographyToolkit/StereoPipeline/releases/download/$VERSION/$NAME.tar.bz2
+# https://github.com/NeoGeographyToolkit/StereoPipeline/releases/download/2024-08-29-daily-build/StereoPipeline-3.5.0-alpha-2024-08-29-x86_64-Linux.tar.bz2
+DATE='2024-08-29'
+#VERSION="3.3.0"
+VERSION="3.5.0-alpha"
+NAME=StereoPipeline-$VERSION-$DATE-x86_64-Linux
+#NAME=StereoPipeline-$VERSION-Linux
+wget -q https://github.com/NeoGeographyToolkit/StereoPipeline/releases/download/$DATE-daily-build/$NAME.tar.bz2
+#wget -q https://github.com/NeoGeographyToolkit/StereoPipeline/releases/download/$VERSION/$NAME.tar.bz2
 tar -xjf $NAME.tar.bz2
 mv $NAME /srv/StereoPipeline
 rm $NAME.tar.bz2
